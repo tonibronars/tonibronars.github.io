@@ -2,7 +2,7 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
   <title>Antonia Bronars</title>
-  
+
   <meta name="author" content="Antonia Bronars">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -19,7 +19,7 @@
               <p style="text-align:center">
                 <name>Antonia Bronars</name>
               </p>
-              <p>I am a PhD student at MIT working with  <a href="https://people.csail.mit.edu/pulkitag/"> Professor Pulkit Agrawal </a> in the Improbable AI lab. I am currently investigating how tactile perception can enable more accurate and dexterous robotic manipulation.  I did my Masters with <a href="https://mcube.mit.edu/"> Professor Alberto Rodriguez </a> in the MCube Lab, and have also spent time at Mitsubishi Electric Research Labs (MERL).
+              <p>I am a PhD student at MIT working with  <a href="https://people.csail.mit.edu/pulkitag/"> Professor Pulkit Agrawal </a> in the Improbable AI lab. I am currently investigating how tactile perception can enable more robust and dexterous robotic manipulation.  I have also spent time as a Student Researcher at Google Deepmind London, and as a Research Intern with Mitsubishi Electric Research Labs (MERL). I did my Masters with <a href="https://mcube.mit.edu/"> Professor Alberto Rodriguez </a> in the MCube Lab.
               </p>
               <p>
                 Prior to MIT, I got my bachelor's in Mechanical Engineering at UC Berkeley. I won the <a href="https://me.berkeley.edu/undergraduate/past-prize-winners/">Steidel Award</a> for undergraduate research, working  with <a href="https://dynamics.berkeley.edu/"> Professor Oliver O'Reilly </a> on nonlinear dynamics,  and <a href="https://best.berkeley.edu"> Professor Alice Agogino</a> on tensegrity robots.
@@ -48,7 +48,52 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-					
+
+          <tr onmouseout="IROS25_stop()" onmouseover="IROS25_start()">
+            <td style="padding:20px;width:25%;text-align: center; vertical-align: middle;">
+              <div class="one">
+                <div class="two" id='IROS25_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/cropped_merl_assembly.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/cropped_merl_assembly.png' height=100%>
+              </div>
+              <script type="text/javascript">
+                function IROS25_start() {
+                  document.getElementById('IROS25_image').style.opacity = "1";
+                }
+
+                function IROS25_stop() {
+                  document.getElementById('IROS25_image').style.opacity = "0";
+                }
+                IROS25_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Autonomous Robotic Assembly: From Part Singulation to Precise Assembly</papertitle>
+              </a>
+              <br>
+              <a href="https://keiohta.github.io/">Kei Ota</a>,
+              <a href="https://www.merl.com/people/jha">Devesh Jha</a>,
+              <a href="https://www.merl.com/people/sjain">Siddarth Jain</a>,
+              <a href="https://www.merl.com/people/yerazunis">Bill Yarazunis</a>,
+              <a href="https://www.merl.com/people/corcodel">Radu Corcodel</a>,
+              <a href="https://yshukla.com/">Yash Shukla</a>,
+              <strong>Antonia Bronars</strong>,
+              <a href="https://www.merl.com/people/romeres">Diego Romeres</a>,
+
+              <br>
+              <em>International Conference on Intelligent Robots and Systems (IROS) </em>, 2024
+              <br>
+              <a href="images/cropped_merl_assembly.mp4">video</a>
+              /
+              <a href="https://arxiv.org/abs/2406.05331">arXiv</a>
+              <p></p>
+              <p>
+              Our framework fuses several manipulation skills including grasping, in-hand manipulation, and insertion to assemble a gear box by leveraging visuotactile and force-torque data.
+              </p>
+            </td>
+          </tr>
 
           <tr onmouseout="ICRA24_stop()" onmouseover="ICRA24_start()">
             <td style="padding:20px;width:25%;text-align: center; vertical-align: middle;">
@@ -111,7 +156,7 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-                <papertitle>High-Accuracy Tactile Pose Estimation for Small Parts Assembly (coming soon!)</papertitle>
+                <papertitle>High-Accuracy Tactile Pose Estimation for Connector Assembly</papertitle>
               </a>
               <br>
               <strong>Antonia Bronars</strong>,
@@ -122,7 +167,7 @@
               <br>
               <p></p>
               <p>
-                We assemble tight-tolerance industrial connectors using a only simple controller, without the need for specialized search or insertion algorithms. This is possible via sub-millimeter accuracy tactile pose estimation. 
+                We assemble tight-tolerance industrial connectors using a only simple controller, without the need for specialized search or insertion algorithms. This is possible via sub-millimeter accuracy tactile pose estimation.
 
               </p>
             </td>
@@ -167,7 +212,7 @@
               <a href="https://arxiv.org/pdf/2307.13133.pdf">arXiv</a>
               <p></p>
               <p>
-                simPLE learns to pick, regrasp, and place objects precisely given the object CAD model. We develop three main components: task-aware grasping, visuotactile perception, and regrasp planning.  
+                simPLE learns to pick, regrasp, and place objects precisely given the object CAD model. We develop three main components: task-aware grasping, visuotactile perception, and regrasp planning.
 
               </p>
             </td>
@@ -190,7 +235,7 @@
               <br>
               <a href="https://arxiv.org/pdf/2204.11701.pdf">arXiv</a>
               <p></p>
-              Given an object's CAD model, we learn a tailored perception model in simulation that estimates a probability distribution over possible object poses given a real tactile observation. Our solution is used by Magna, ABB, and MERL. 
+              Given an object's CAD model, we learn a tailored perception model in simulation that estimates a probability distribution over possible object poses given a real tactile observation. Our solution is used by Magna, ABB, and MERL.
               <p>
               </p>
             </td>
