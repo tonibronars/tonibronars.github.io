@@ -49,6 +49,55 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="Neurips24_stop()" onmouseover="Neurips24_start()">
+            <td style="padding:20px;width:25%;text-align: center; vertical-align: middle;">
+              <div class="one">
+                <div class="two" id='Neurips24_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/cropped-ftl-igm-robot.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/cropped-ftl-igm-robot.png' height=100%>
+              </div>
+              <script type="text/javascript">
+                function Neurips24_start() {
+                  document.getElementById('Neurips24_image').style.opacity = "1";
+                }
+
+                function Neurips24_stop() {
+                  document.getElementById('Neurips24_image').style.opacity = "0";
+                }
+                Neurips24_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Few-Shot Task Learning through Inverse Generative Modeling</papertitle>
+              </a>
+              <br>
+              <a href="https://avivne.github.io//">Aviv Netanyahu</a>,
+              <a href="https://yilundu.github.io/">Yilun Du</a>,
+              <strong>Antonia Bronars</strong>,
+              <a href="https://jyopari.github.io/">Jyothish Pari</a>,
+              <a href="https://cocosci.mit.edu/josh">Joshua B. Tenenbaum</a>,
+              <a href="https://www.tshu.io/">Tianmin Shu</a>,
+              <a href="https://people.csail.mit.edu/pulkitag/">Pulkit Agrawal</a>
+
+              <br>
+              <em>Conference on Neural Information Processing Systems (NeurIPS) </em>, 2024
+              <br>
+              <a href="https://avivne.github.io/ftl-igm/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2411.04987">arXiv</a>
+              /
+              <a href="https://drive.google.com/file/d/13FLgzyyUVj7DT0V82rL2uWekqHeFIa9b/view">video</a>
+              /
+              <a href="https://github.com/avivne/ftl-igm/tree/main/code">code</a>
+              <p></p>
+              <p>
+              We approach few-shot continual learning via generative modeling.
+              </p>
+            </td>
+          </tr>
+
           <tr onmouseout="IROS25_stop()" onmouseover="IROS25_start()">
             <td style="padding:20px;width:25%;text-align: center; vertical-align: middle;">
               <div class="one">
@@ -163,11 +212,12 @@
               <a href="https://www.merl.com/people/jha">Devesh Jha</a>,
               <a href="https://www.merl.com/people/corcodel">Radu Corcodel</a>
               <br>
-              <em>In preparation</em>
+              <em>Towards Human Level Intelligence Vision and Tactile Sensing (ICRA Workshop),</em> 2025
               <br>
+              <a href="data/depth2pose_vitac.pdf">pdf</a>
               <p></p>
               <p>
-                We assemble tight-tolerance industrial connectors using a only simple controller, without the need for specialized search or insertion algorithms. This is possible via sub-millimeter accuracy tactile pose estimation.
+                We assemble tight-tolerance industrial connectors using a only simple controller, without the need for specialized search or insertion algorithms. This is possible via high-accuracy tactile pose estimation.
 
               </p>
             </td>
@@ -205,7 +255,7 @@
               <a href="https://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a>
 
               <br>
-              <em>Science Robotics </em>, 2023
+              <em>Science Robotics</em>, 2023
               <br>
               <a href="images/simple.mp4">video</a>
               /
