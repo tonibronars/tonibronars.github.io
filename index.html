@@ -49,6 +49,114 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="tunetolearn_stop()" onmouseover="tunetolearn_start()">
+            <td style="padding:20px;width:25%;text-align: center; vertical-align: middle;">
+              <div class="one">
+                <div class="two" id='tunetolearn_image'>
+                  <video width="95%" autoplay loop muted playsinline>
+                    <source src="images/tunetolearn_heatmap.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <img src='images/tunetolearn_heatmap_static.png' width="95%">
+              </div>
+              <script type="text/javascript">
+                function tunetolearn_start() {
+                  document.getElementById('tunetolearn_image').style.opacity = "1";
+                }
+
+                function tunetolearn_stop() {
+                  document.getElementById('tunetolearn_image').style.opacity = "0";
+                }
+                tunetolearn_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Tune to Learn: How Controller Gains Shape Robot Policy Learning</papertitle>
+              </a>
+              <br>
+              <strong>Antonia Bronars*</strong>,
+              <a href="https://younghyopark.me/">Younghyo Park*</a>,
+              <a href="https://people.csail.mit.edu/pulkitag/">Pulkit Agrawal</a>
+
+              <br>
+              <em>arXiv preprint</em>, 2026
+              <br>
+              <a href="https://younghyopark.me/tune-to-learn/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2604.02523">arXiv</a>
+              <p></p>
+              <p>
+                We show that controller gains shape the inductive bias of different policy learning paradigms, and identify gain regimes that maximize learnability for behavior cloning, reinforcement learning, and sim-to-real transfer.
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="exostart_stop()" onmouseover="exostart_start()">
+            <td style="padding:20px;width:25%;text-align: center; vertical-align: middle;">
+              <div class="one">
+                <div class="two" id='exostart_image'><video  width=95% muted autoplay loop>
+                <source src="images/exostart.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/exostart.png' width="95%">
+              </div>
+              <script type="text/javascript">
+                function exostart_start() {
+                  document.getElementById('exostart_image').style.opacity = "1";
+                }
+
+                function exostart_stop() {
+                  document.getElementById('exostart_image').style.opacity = "0";
+                }
+                exostart_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>ExoStart: Efficient learning for dexterous manipulation with sensorized exoskeleton demonstrations</papertitle>
+              </a>
+              <br>
+              <span id="exostart-authors-short">
+              <a href="https://si-lynnn.github.io/">Zilin Si</a>,
+              <a href="https://uk.linkedin.com/in/josechenf">Jose Enrique Chen</a>,
+              <a href="https://www.linkedin.com/in/m-emre-karagozler-870b28a/">M. Emre Karagozler</a>,
+              <strong>Antonia Bronars</strong>,
+              Jonathan Hutchinson,
+              <a href="https://www.linkedin.com/in/thomas-lampe-632477127/">Thomas Lampe</a>
+              <span style="cursor: pointer; color: #0066cc; text-decoration: underline;" onclick="document.getElementById('exostart-authors-short').style.display='none'; document.getElementById('exostart-authors-full').style.display='inline';">... [+12 authors]</span>
+              </span>
+              <span id="exostart-authors-full" style="display: none;">
+              <a href="https://si-lynnn.github.io/">Zilin Si</a>,
+              <a href="https://uk.linkedin.com/in/josechenf">Jose Enrique Chen</a>,
+              <a href="https://www.linkedin.com/in/m-emre-karagozler-870b28a/">M. Emre Karagozler</a>,
+              <strong>Antonia Bronars</strong>,
+              Jonathan Hutchinson,
+              <a href="https://www.linkedin.com/in/thomas-lampe-632477127/">Thomas Lampe</a>,
+              <a href="https://scholar.google.com/citations?user=snHVatUAAAAJ&hl=en">Nimrod Gileadi</a>,
+              <a href="https://thowell.github.io/">Taylor Howell</a>,
+              <a href="https://www.linkedin.com/in/stefanosaliceti/">Stefano Saliceti</a>,
+              <a href="https://www.linkedin.com/in/lukaszbarczyk/">Lukasz Barczyk</a>,
+              <a href="https://www.linkedin.com/in/ilanolivarez/">Ilan Olivarez Correa</a>,
+              <a href="https://www.linkedin.com/in/ereztom/">Tom Erez</a>,
+              <a href="https://mohitshridhar.com/">Mohit Shridhar</a>,
+              <a href="https://scholar.google.com/citations?user=pA0jFL4AAAAJ&hl=en">Murilo Fernandes Martins</a>,
+              <a href="https://scholar.google.com/citations?user=wtRVnsYAAAAJ&hl=en">Konstantinos Bousmalis</a>,
+              <a href="https://scholar.google.com/citations?user=79k7bGEAAAAJ&hl=en">Nicolas Heess</a>,
+              <a href="https://scholar.google.com/citations?user=t3l8q6gAAAAJ&hl=en">Francesco Nori</a>,
+              <a href="https://scholar.google.com/citations?user=gkC58XkAAAAJ&hl=en">Maria Bauza</a>
+              <span style="cursor: pointer; color: #0066cc; text-decoration: underline;" onclick="document.getElementById('exostart-authors-short').style.display='inline'; document.getElementById('exostart-authors-full').style.display='none';">[show less]</span>
+              </span>
+
+              <br>
+              <em>arXiv preprint</em>, 2025
+              <br>
+              <a href="https://arxiv.org/abs/2506.11775">arXiv</a>
+              <p></p>
+              <p>
+                We leverage human dexterity via a wearable exoskeleton to collect demonstrations, then use a dynamics filter and auto-curriculum RL to achieve 50%+ success on complex dexterous tasks with zero-shot sim-to-real transfer.
+              </p>
+            </td>
+          </tr>
+
           <tr onmouseout="Tactile_demostart_stop()" onmouseover="Tactile_demostart_start()">
             <td style="padding:20px;width:25%;text-align: center; vertical-align: middle;">
               <div class="one">
