@@ -19,35 +19,102 @@
               <p style="text-align:center">
                 <name>Antonia Bronars</name>
               </p>
-              <p>I am a PhD student at MIT working with  <a href="https://people.csail.mit.edu/pulkitag/"> Professor Pulkit Agrawal </a> in the Improbable AI lab. I am currently investigating how tactile perception can enable more robust and dexterous robotic manipulation.  I have also spent time as a Student Researcher at Google Deepmind London, and as a Research Intern with Mitsubishi Electric Research Labs (MERL). I did my Masters with <a href="https://mcube.mit.edu/"> Professor Alberto Rodriguez </a> in the MCube Lab.
+              <p>I am a PhD student at MIT working with  <a href="https://people.csail.mit.edu/pulkitag/"> Professor Pulkit Agrawal </a> in the Improbable AI lab. I have also spent time as a Student Researcher at Google Deepmind London, and as a Research Intern with Mitsubishi Electric Research Labs (MERL). I did my Masters with <a href="https://mcube.mit.edu/"> Professor Alberto Rodriguez </a> in the MCube Lab.
               </p>
               <p>
                 Prior to MIT, I got my bachelor's in Mechanical Engineering at UC Berkeley. I won the <a href="https://me.berkeley.edu/undergraduate/past-prize-winners/">Steidel Award</a> for undergraduate research, working  with <a href="https://dynamics.berkeley.edu/"> Professor Oliver O'Reilly </a> on nonlinear dynamics,  and <a href="https://best.berkeley.edu"> Professor Alice Agogino</a> on tensegrity robots.
               </p>
               <p style="text-align:center">
                 <a href="mailto:bronars@mit.edu">Email</a> &nbsp/&nbsp
-                <a href="data/AntoniaBronars_CV.pdf">CV</a> &nbsp/&nbsp
                 <a href="https://linkedin.com/in/antonia-bronars">LinkedIn</a> &nbsp/&nbsp
                 <a href="https://twitter.com/BronarsToni">Twitter</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?hl=en&tzom=300&user=1WSuJdQAAAAJ">Google Scholar</a>
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/AntoniaBronars.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/AntoniaBronars_circle.png" class="hoverZoomLink"></a>
+              <a href="images/bronars_icra_cropped.jpeg"><img style="width:100%;max-width:100%;border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,0.1)" alt="profile photo" src="images/bronars_icra_cropped.jpeg" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:15px 20px;width:100%;text-align:center;background-color:#e8f4fd;border-left:4px solid #1772d0">
+              <strong style="color:#1772d0">🎉 &nbsp; I'm on the job market for robotics research scientist positions starting in 2027! If you are hiring, please reach out.</strong>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Selected Projects</heading>
+              <heading>Research Projects</heading>
               <p>
-                I am interested in physical robot intelligence, and in particular, the role of tactile feedback in reactive control of dexterous manipulation. My recent work has centered methods for solving precise manipulation tasks that leverage tactile feedback.
+                I am currently investigating how sensorimotor components—including tactile sensing, proprioception, and low-level control—interact with policy learning to enable precise and dexterous robotic manipulation.
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="blindinsertion_stop()" onmouseover="blindinsertion_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle;text-align:center">
+              <div style="display:inline-block;position:relative;max-height:210px">
+                <img src='images/blind-insertion-poster.jpg' style="max-height:210px;width:auto;display:block">
+                <div id='blindinsertion_image' style="position:absolute;top:0;left:0;width:100%;height:100%;transition:opacity .2s ease-in-out">
+                  <video style="max-height:210px;width:auto" muted autoplay loop playsinline>
+                    <source src="images/blind-insertion.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+              <script type="text/javascript">
+                function blindinsertion_start() {
+                  document.getElementById('blindinsertion_image').style.opacity = "1";
+                }
+
+                function blindinsertion_stop() {
+                  document.getElementById('blindinsertion_image').style.opacity = "0";
+                }
+                blindinsertion_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Blind Precise Assembly: Proprioceptive Sim-to-Real Peg-in-Hole for Diverse Parts</papertitle>
+              </a>
+              <br>
+              <strong>Antonia Bronars*</strong>,
+              <a href="https://younghyopark.me/">Younghyo Park*</a>,
+              Kushal Kedia,
+              <a href="https://people.csail.mit.edu/pulkitag/">Pulkit Agrawal</a>
+              <br>
+              <em>Under review</em>
+              <p></p>
+              <p>
+                A blind insertion policy that senses contact only through its own joint encoders, with no vision, force, or tactile input, is trained entirely in simulation and transfers zero-shot to a real robot, inserting pegs of diverse shapes and sizes with millimeter-scale clearance. Blind policies are slower than matched visual ones, but generalize far better to unseen parts.
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/inertia-mismatch.jpg" width="100%" alt="A heavy robot arm and light everyday objects on opposite ends of a seesaw">
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>When Robots Outweigh Objects: How Inertia Mismatch Shapes Robot Policy Learning</papertitle>
+              </a>
+              <br>
+              <a href="https://younghyopark.me/">Younghyo Park</a>,
+              <strong>Antonia Bronars</strong>,
+              <a href="https://people.csail.mit.edu/pulkitag/">Pulkit Agrawal</a>
+              <br>
+              <em>Under review</em>
+              <br>
+              <a href="https://youtu.be/roAMfFdbC5A">video</a>
+              <p></p>
+              <p>
+                Robot arms are often far heavier than the everyday objects they manipulate. Through controlled experiments that vary robot and object masses, we show that this inertia mismatch carries a hidden cost for behavior cloning, and that choosing workspace placements and demonstrations that favor lower task-space inertia improves imitation-learned policies without replacing the robot.
+              </p>
+            </td>
+          </tr>
 
           <tr onmouseout="tunetolearn_stop()" onmouseover="tunetolearn_start()">
             <td style="padding:20px;width:25%;text-align: center; vertical-align: middle;">
